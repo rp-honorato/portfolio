@@ -1,0 +1,42 @@
+.backgroundImage {
+    position: relative;
+    margin-bottom: 30rem;
+    opacity: 0.9;
+}
+
+.backgroundImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #1873b498, #FFFFFF, #53B8DE, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+    z-index: 1; /* Ajusta o z-index para colocar a animação abaixo da imagem */
+}
+
+.backgroundImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/UI5Logo_blue_desktop.png');
+    background-size: cover;
+    z-index: 2; /* Ajusta o z-index para colocar a imagem acima da animação */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
