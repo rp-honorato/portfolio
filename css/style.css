@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../images/UI5Logo_blue_desktop.png");
+    background-image: url(../images/UI5Logo_blue_desktop.png);
     background-size: cover;
     z-index: 2; /* Ajusta o z-index para colocar a imagem acima da animação */
 }
